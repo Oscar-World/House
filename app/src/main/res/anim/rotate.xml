@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rotate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator = "@android:anim/linear_interpolator"
+    android:repeatCount="1"
+    android:duration="1000"
+    android:pivotX="50%"
+    android:pivotY="50%"
+    android:fromDegrees="0"
+    android:toDegrees="360">
+    <!--
+1초 동안 진행되는 회전 애니메이션.
+추가 반복횟수 설정 : +1
+기준점 가운데 (50%)
+0도에서 360도까지 회전
+interpolator 속성 : 일정한 속도
+-->
+</rotate>

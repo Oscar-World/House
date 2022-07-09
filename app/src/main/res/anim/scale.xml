@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scale xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration = "500"
+    android:fromXScale="1.0"
+    android:fromYScale="1.0"
+    android:toXScale="1.5"
+    android:toYScale="1.5"
+    android:pivotX="50%"
+    android:pivotY="50%"
+    >
+    <!--
+1초 동안 진행되는 크기 애니메이션.
+기준점 가운데 (50%)
+0부터 1까지 커짐 (2.0으로 작성하면 2배로 커짐)
+-->
+</scale>

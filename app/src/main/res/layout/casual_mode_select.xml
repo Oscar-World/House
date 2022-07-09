@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Casual_mode_selectActivity">
+
+    <ImageView
+        android:id="@+id/casual_imageview"
+        android:layout_width="100dp"
+        android:layout_height="140dp"
+        android:scaleType="centerInside"
+        android:background="#eee"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="311dp"
+        android:layout_height="140dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/casual_imageview"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/casual_countrytext"
+                android:layout_width="138dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#c4c8ff"
+                android:gravity="center"
+                android:text="국가"
+                android:textSize="18dp"
+                />
+
+            <TextView
+                android:id="@+id/casual_nametext"
+                android:layout_width="128dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ebc4ff"
+                android:gravity="center"
+                android:text="닉네임"
+                android:textSize="18dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/casual_leveltext"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#f2f788"
+                android:gravity="center"
+                android:text="레벨"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:id="@+id/casual_expText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="#8bff95"
+                android:gravity="center"
+                android:text="경험치"
+                android:textSize="18dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/casual_moneytext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ffefc4"
+            android:gravity="center"
+            android:text="골드"
+            android:textSize="18dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/game6_button"
+        android:layout_width="165dp"
+        android:layout_height="150dp"
+        android:backgroundTint="#45bbff"
+        android:text="제이든 잡기"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.914"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.679" />
+
+    <Button
+        android:id="@+id/game6_blockbutton"
+        android:layout_width="165dp"
+        android:layout_height="150dp"
+        android:backgroundTint="#a0a0a0"
+        android:text=" ? "
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.914"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.679" />
+
+    <Button
+        android:id="@+id/randomBox_button"
+        android:layout_width="165dp"
+        android:layout_height="120dp"
+        android:backgroundTint="#2288ff"
+        android:text="랜덤박스 상점"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.914"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.973" />
+
+    <Button
+        android:id="@+id/game3_button"
+        android:layout_width="165dp"
+        android:layout_height="150dp"
+        android:backgroundTint="#45bbff"
+        android:text="주사위 게임"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.081"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.679" />
+
+    <Button
+        android:id="@+id/game3_blockbutton"
+        android:layout_width="165dp"
+        android:layout_height="150dp"
+        android:backgroundTint="#a0a0a0"
+        android:text=" ? "
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.081"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.679" />
+
+    <Button
+        android:id="@+id/game1_button"
+        android:layout_width="165dp"
+        android:layout_height="150dp"
+        android:backgroundTint="#45bbff"
+        android:text="하프 게임"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.081"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.329" />
+
+
+    <Button
+        android:id="@+id/game2_button"
+        android:layout_width="165dp"
+        android:layout_height="150dp"
+        android:backgroundTint="#45bbff"
+        android:text="300 게임"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.914"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.329" />
+
+    <Button
+        android:id="@+id/game2_blockbutton"
+        android:layout_width="165dp"
+        android:layout_height="150dp"
+        android:backgroundTint="#a0a0a0"
+        android:text=" ? "
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.914"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.329" />
+
+    <Button
+        android:id="@+id/select_backbutton"
+        android:layout_width="130dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="#f00"
+        android:text="뒤로가기"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.998" />
+
+    <ImageButton
+        android:id="@+id/info_editBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.160"
+        android:backgroundTint="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.152"
+        app:srcCompat="@drawable/gear" />
+
+    <ImageView
+        android:id="@+id/casual_koreaImage"
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.282"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.003"
+        app:srcCompat="@drawable/korea" />
+
+    <ImageView
+        android:id="@+id/casual_usaImage"
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.282"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.003"
+        app:srcCompat="@drawable/usa" />
+
+    <ImageView
+        android:id="@+id/casual_egyptImage"
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.282"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.003"
+        app:srcCompat="@drawable/egypt" />
+
+    <ImageView
+        android:id="@+id/casual_vietnamImage"
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.282"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.003"
+        app:srcCompat="@drawable/vietnam" />
+
+    <ImageView
+        android:id="@+id/casual_germanyImage"
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.282"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.003"
+        app:srcCompat="@drawable/germany" />
+
+    <ImageView
+        android:id="@+id/casual_mongoliaImage"
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.282"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.003"
+        app:srcCompat="@drawable/mongolia" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

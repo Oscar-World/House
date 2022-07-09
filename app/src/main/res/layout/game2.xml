@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Game2Activity">
+
+
+    <ImageView
+        android:id="@+id/game2_pictureview"
+        android:layout_width="100dp"
+        android:layout_height="140dp"
+        android:scaleType="centerInside"
+        android:background="#eee"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="311dp"
+        android:layout_height="140dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/game2_pictureview"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/game2_countrytext"
+                android:layout_width="138dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#c4c8ff"
+                android:gravity="center"
+                android:text="국가"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:id="@+id/game2_nametext"
+                android:layout_width="128dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ebc4ff"
+                android:gravity="center"
+                android:text="닉네임"
+                android:textSize="18dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/game2_leveltext"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#f2f788"
+                android:gravity="center"
+                android:text="레벨"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:id="@+id/game2_expText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="#8bff95"
+                android:gravity="center"
+                android:text="경험치"
+                android:textSize="18dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/game2_moneytext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ffefc4"
+            android:gravity="center"
+            android:text="골드"
+            android:textSize="18dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/game2_reset_button"
+        android:layout_width="130dp"
+        android:layout_height="70dp"
+        android:text="다시하기"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.943"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.975" />
+
+    <Button
+        android:id="@+id/game2_start_button"
+        android:layout_width="130dp"
+        android:layout_height="70dp"
+        android:text="정답 확인"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.943"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.975" />
+
+    <Button
+        android:id="@+id/game2_bet_button"
+        android:layout_width="160dp"
+        android:layout_height="70dp"
+        android:text="베팅액 입력"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.414" />
+
+    <Button
+        android:id="@+id/game2_backbutton"
+        android:layout_width="130dp"
+        android:layout_height="70dp"
+        android:backgroundTint="#f00"
+        android:text="뒤로가기"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.056"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.975" />
+
+    <EditText
+        android:id="@+id/game2_inputAnswer"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:hint="정답을 입력하세요"
+        android:visibility="invisible"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.591" />
+
+    <TextView
+        android:id="@+id/game2_upText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:text="↑ UP ↑"
+        android:textColor="#00f"
+        android:textSize="60dp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/game2_inputAnswer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/game2_downText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:text="↓ DOWN ↓"
+        android:textColor="#f00"
+        android:textSize="60dp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/game2_inputAnswer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/game2_answerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:text="★ 정답 ★"
+        android:textColor="#000"
+        android:textSize="60dp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/game2_inputAnswer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/game2_gameOverText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:text="Game Over"
+        android:textColor="#000"
+        android:textSize="60dp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/game2_inputAnswer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/game2_numberText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/game2_inputAnswer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/game2_upText"
+        app:layout_constraintVertical_bias="0.391" />
+
+    <TextView
+        android:id="@+id/game2_chanceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="남은 기회 : 8번"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/game2_inputAnswer"
+        app:layout_constraintVertical_bias="0.192" />
+
+    <TextView
+        android:id="@+id/game2_timeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="남은 시간 : 10초"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/game2_inputAnswer"
+        app:layout_constraintVertical_bias="0.434" />
+
+    <TextView
+        android:id="@+id/game2_getgoldText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="골드 획득"
+        android:textColor="#ff0"
+        android:textSize="32dp"
+        android:visibility="invisible"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.193"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.256" />
+
+    <TextView
+        android:id="@+id/game2_getexpText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="경험치 획득"
+        android:textColor="#0f0"
+        android:visibility="invisible"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.925"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.256" />
+
+    <TextView
+        android:id="@+id/game2_betText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-베팅금액"
+        android:textColor="#f00"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.950"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.175" />
+
+    <FrameLayout
+        android:id="@+id/game2_frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="430dp"
+        android:background="#ddd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.606">
+
+        <Button
+            android:id="@+id/game2_frameClose"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_gravity="center|bottom"
+            android:backgroundTint="#f00"
+            android:text="알겠어요!"
+            android:layout_marginBottom="5dp"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/game2_frameTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:layout_marginTop="10dp"
+            android:text="게임 안내"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/game2_frameText"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="게임 내용"
+            android:textAlignment="center"
+            android:textSize="20dp" />
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/game2_koreaImage"
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.282"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.003"
+        app:srcCompat="@drawable/korea" />
+
+    <ImageView
+        android:id="@+id/game2_usaImage"
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.282"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.003"
+        app:srcCompat="@drawable/usa" />
+
+    <ImageView
+        android:id="@+id/game2_egyptImage"
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.282"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.003"
+        app:srcCompat="@drawable/egypt" />
+
+    <ImageView
+        android:id="@+id/game2_vietnamImage"
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.282"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.003"
+        app:srcCompat="@drawable/vietnam" />
+
+    <ImageView
+        android:id="@+id/game2_germanyImage"
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.282"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.003"
+        app:srcCompat="@drawable/germany" />
+
+    <ImageView
+        android:id="@+id/game2_mongoliaImage"
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.282"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.003"
+        app:srcCompat="@drawable/mongolia" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

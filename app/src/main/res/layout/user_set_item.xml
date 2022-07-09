@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="24dp">
+
+        <ImageView
+            android:id="@+id/game_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/game_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="게임 종류"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/comment"
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:maxLines="1"
+            android:text="게임 메모"
+            android:textSize="16dp" />
+
+        <ImageButton
+            android:id="@+id/edit_Button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:backgroundTint="#fff"
+            android:layout_marginLeft="15dp"
+            app:srcCompat="@drawable/edit" />
+
+        <ImageButton
+            android:id="@+id/remove_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="end"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#fff"
+            app:srcCompat="@drawable/trash" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="5dp"
+        android:background="#aaa"/>
+
+</LinearLayout>

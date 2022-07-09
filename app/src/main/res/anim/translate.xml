@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<translate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/bounce_interpolator"
+    android:duration = "3000"
+    android:fromYDelta="-430%"
+    android:toYDelta="0"
+    android:startOffset="3000"
+    >
+    <!--
+1초 동안 진행되는 이동 애니메이션.
+X축 -100% 설정 : 좌측에서 가운데(0)까지 이동
+0부터 1까지 커짐 (2.0으로 작성하면 2배로 커짐)
+-->
+</translate>
